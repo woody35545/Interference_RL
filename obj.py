@@ -4,7 +4,7 @@ class user:
     def __init__(self):
         self.x=0
         self.y=0
-        self.move_speed= 5
+        self.move_speed= 1
     def set_location(self,_x,_y):
         self.x=_x
         self.y=_y
@@ -20,7 +20,7 @@ class user:
         return self.move_speed
     def set_move_speed(self,_move_speed):
         self.move_speed=_move_speed
-    def random_move(self):
+    def random_move(self): # testing Done
         move_ = r.randrange(0,4)
         if move_==0: # move UP, self.x + move_speed
             self.set_x(self.get_x()+self.get_move_speed())
