@@ -5,10 +5,11 @@ import time as t
 
 
 u = obj.user()
+u.set_name("u1")
 print(f"train.py")
 
 while True:
 
     u.random_move()
-    print(u.get_x())
+    u.print_location()
     t.sleep(1)
