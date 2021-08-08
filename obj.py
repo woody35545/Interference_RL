@@ -2,12 +2,17 @@ import random as r
 
 class user:
     def __init__(self):
+        self.name= ""
         self.x=0
         self.y=0
         self.move_speed= 1
     def set_location(self,_x,_y):
         self.x=_x
         self.y=_y
+    def get_name(self):
+        return str(self.name)
+    def set_name(self,_name):
+        self.name=_name
     def get_x(self):
         return int(self.x)
     def set_x(self,_x):
@@ -30,6 +35,8 @@ class user:
             self.set_y(self.get_y()+self.get_move_speed())
         if move_==3: # move Left, self.y - move_speed
             self.set_y((self.get_y()-self.get_move_speed()))
+    def print_location(self):
+        print(f"")
 class satelite:
     def __init__(self):
         self.x=0
