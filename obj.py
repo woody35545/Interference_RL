@@ -1,4 +1,3 @@
-import __init__
 class user:
     def __init__(self):
         self.x=0
