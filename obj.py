@@ -45,4 +45,6 @@ class satelite:
     def set_bounds(self,_width,_height):
         None # 구현 필요
 
-
+class state:
+    def __init__(self):
+        self.state_number=None
