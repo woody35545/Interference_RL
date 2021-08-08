@@ -1,15 +1,14 @@
 import env
-import obj
 import __init__
 import time as t
+runtime = 0
 
-
-u = obj.user()
-u.set_name("u1")
 print(f"train.py")
-
+myEnv = env.make("myENv")
+myEnv.init_users()
 while True:
-
-    u.random_move()
-    u.print_location()
+    print(f"Running time: {runtime}")
+    myEnv.random_move_users()
+    myEnv.print_users_location()
     t.sleep(1)
+    runtime+=1

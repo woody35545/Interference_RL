@@ -37,6 +37,7 @@ class user:
             self.set_y((self.get_y()-self.get_move_speed()))
     def print_location(self):
         print(f"{self.get_name()}: ({self.get_x()},{self.get_y()}) ")
+
 class satelite:
     def __init__(self):
         self.x=0
