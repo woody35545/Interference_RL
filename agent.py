@@ -1,4 +1,6 @@
 from __init__ import *
+import numpy as np
+
 action_indexing_table = {}
 action_number = 0
 class agent:
@@ -23,4 +25,3 @@ class agent:
     def do_action(self):
         for i in range(MAX_USER_SIZE):
             myEnv.users[i].set_freq(r.randrange(0, 5))
-            print(f"f_do_action TEST: {i}: {myEnv.users[i].freq}")

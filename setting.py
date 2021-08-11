@@ -1,18 +1,21 @@
-MAX_USER_SIZE=3
-MAX_SATELITE_SIZE=2
-MAX_STATE_SIZE=0 #수정 필요
-MAX_ACTION_SIZE=2
-user_set=[""]*MAX_USER_SIZE
-action_set=[""]*MAX_ACTION_SIZE # 수정필요
-state_set=[""]*MAX_STATE_SIZE # 수정필요
 min_x = -10
 max_x = 10
 min_y = -10
 max_y = 10
-scale_size_x = max_x-min_x # x축 range
-scale_size_y = max_y-min_y # y축 range
-scale_size = scale_size_x*scale_size_y # map pixel
+range_x = max_x-min_x # x축 range
+range_y = max_y-min_y # y축 range
+map_size = range_x*range_y # map pixel
 
+
+MAX_USER_SIZE=3
+MAX_SATELITE_SIZE=2
+MAX_STATE_SIZE=0 #수정 필요
+MAX_ACTION_SIZE=7
+Q_MAX_STATE= map_size**MAX_USER_SIZE
+Q_MAX_ACTION= MAX_ACTION_SIZE**MAX_USER_SIZE
+user_set=[""]*MAX_USER_SIZE
+action_set=[""]*MAX_ACTION_SIZE # 수정필요
+state_set=[""]*MAX_STATE_SIZE # 수정필요
 
 
 def get_MAX_USER_SIZE():
@@ -31,6 +34,3 @@ def set_MAX_ACTION_SIZE(_size):
     global MAX_ACTION_SIZE
     MAX_ACTION_SIZE=int(_size)
 
-def state_indexing():
-    #수정 필요
-    None

@@ -1,7 +1,8 @@
 from __init__ import *
 from agent import *
 runtime = 0
-
+Q = np.full((Q_MAX_STATE,Q_MAX_ACTION),"0") # 수정필요
+print(Q)
 print(f"train.py")
 
 ## AGENT IMPLEMENTS ##
@@ -26,5 +27,6 @@ while True:
     print(f"{myEnv.get_state_indexing_table()}") # temp #
     print("DEBUG " + myEnv.get_state_index(state))
     myEnv.print_users_location()
+    print(Q_MAX_STATE)
     t.sleep(10)
     runtime+=1
