@@ -5,10 +5,13 @@ class user:
         self.name= ""
         self.x=0
         self.y=0
+        self.freq = -1
         self.move_speed= 1
     def set_location(self,_x,_y):
         self.x=_x
         self.y=_y
+    def set_freq(self,_freq):
+        self.freq=_freq
     def get_name(self):
         return str(self.name)
     def set_name(self,_name):

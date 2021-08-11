@@ -1,7 +1,6 @@
 import numpy as np
 import time as t
 import random as r
-
 MAX_USER_SIZE=3
 MAX_SATELITE_SIZE=2
 MAX_STATE_SIZE=0 #수정 필요

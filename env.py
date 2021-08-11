@@ -4,7 +4,7 @@ current_state = ""
 current_action = ""
 current_step = ""
 state_indexing_table = {}
-action_indexing_table = {}
+
 state_number=0
 class make:
     def __init__(self,_name):
