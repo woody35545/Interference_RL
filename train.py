@@ -1,8 +1,10 @@
 from __init__ import *
 from agent import *
 runtime = 0
-Q = np.full((Q_MAX_STATE,Q_MAX_ACTION),"0") # 수정필요
-print(Q)
+Q = np.full((7**3,7**3),"0") # 수정필요
+#print(Q)
+print(len(Q))
+print(49*49)
 print(f"train.py")
 
 ## AGENT IMPLEMENTS ##

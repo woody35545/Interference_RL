@@ -25,7 +25,6 @@ class make:
         for i in range(MAX_USER_SIZE):
             print(f"{i}: ({self.users[i].get_x()},{self.users[i].get_y()})")
 
-
     def get_current_state(self):
         global current_state
         current_state = ""

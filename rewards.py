@@ -1,0 +1,26 @@
+loc1_reward_table = { 1:1, 2:1, 3:1, 4:2, 5:2, 6:2, 7:3}
+loc2_reward_table = { 1:1, 2:1, 3:1, 4:2, 5:2, 6:2, 7:3}
+loc3_reward_table = { 1:1, 2:1, 3:1, 4:2, 5:2, 6:2, 7:3}
+loc4_reward_table = {1:1, 2:1, 3:-1, 4:2,5:0,6:0,7:1 } # C랑 겹치면 -1
+loc5_reward_table = {1:1,2:-1,3:1,4:0,5:0,6:2,7:1} #B:-1
+loc6_reward_table = {1:-1,2:1,3:1,4:0,5:2,6:0,7:1} #A:-1
+loc7_reward_table = {1:1,2:-1,3:1,4:0,5:0,6:2,7:1} #B:-1
+loc8_reward_table = {1:-1,2:1,3:1,4:0,5:2,6:0,7:1} #A:-1
+loc9_reward_table = {1:1,2:1,3:-1,4:2,5:0,6:0,7:1} #C:  -1
+loc10_reward_table = {1:1,2:-1,3:-1,4:0,5:-2,6:0,7:-1}
+loc11_reward_table = {1:-1,2:-1,3:1,4:-2,5:0,6:0,7:-1} #A:-1,B:-1
+loc12_reward_table = {1:-1,2:1,3:-1,4:0,5:0,6:-2,7:-1}#A:-1, C:-1
+
+reward_table = [""]*13
+reward_table[1]= loc1_reward_table
+reward_table[2]= loc2_reward_table
+reward_table[3]= loc3_reward_table
+reward_table[4]= loc4_reward_table
+reward_table[5]= loc5_reward_table
+reward_table[6]= loc6_reward_table
+reward_table[7]= loc7_reward_table
+reward_table[8]= loc8_reward_table
+reward_table[9]= loc9_reward_table
+reward_table[10]= loc10_reward_table
+reward_table[11]= loc11_reward_table
+reward_table[12]= loc12_reward_table

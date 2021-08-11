@@ -1,6 +1,7 @@
 from __init__ import *
 import numpy as np
 
+Q = np.full((1,1),"0") # 수정필요
 action_indexing_table = {}
 action_number = 0
 class agent:
