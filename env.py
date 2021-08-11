@@ -1,5 +1,5 @@
 from obj import *
-from __init__ import *
+from setting import *
 current_state = ""
 current_action = ""
 current_step = ""
